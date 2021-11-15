@@ -222,15 +222,15 @@ label {
   margin-bottom: 11px;
 }
 input {
-  padding:  8px;
+  padding: 8px;
   border: 0.8px solid #ccc;
   outline: none;
 }
 .advert{
   display: none;
-  color: red;
+  color: rgb(250, 50, 50);
   margin: -.3rem -.4rem;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .text-control {
