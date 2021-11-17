@@ -19,7 +19,8 @@ const champs = document.querySelectorAll("#first, #last, #email, #birthdate, #qu
 const locationError = document.querySelector(".advert.location");
 const locationForm = document.querySelector(".formData.location");
 const agreeInput = document.getElementById("checkbox1");
-const agreeAdvert = document.querySelector(".advert.agree")
+const agreeAdvert = document.querySelector(".advert.agree");
+const finalMessage = document.getElementById("finalmessage");
 
 //RegEX
 const oneLetterRegex = new RegExp('^[A-zÀ-ÿ{1}]$')
@@ -51,8 +52,10 @@ function validate(){
   checkMatch("email", mailRegex, "mail");
   checkDate();
   //if one of the input is false the form don't send
-  if(error == true){
-    return false
+  if(error == false){
+    finalMessage.style.display = "flex";
+    document.querySelector("main").style.display = "none"
+    document.querySelector("form").reset()
   }
 }
 
@@ -119,4 +122,9 @@ function checkMatch(verify, verification, alert){
     }
     error = true
   }
+}
+
+//for close the confirmation message
+function closeFinal(){
+  location.reload();
 }

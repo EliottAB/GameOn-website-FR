@@ -354,7 +354,7 @@ input[data-error]::after {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup, #btn-final {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -378,6 +378,27 @@ input[data-error]::after {
 }
 .select-selected {
   background-color: #fff;
+}
+
+#finalmessage{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #232323;
+  z-index: 5;
+}
+
+#finalmessage p{
+  color: white;
+  width: 40rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 /* Style the arrow inside the select element: */
