@@ -489,7 +489,7 @@ input[data-error]::after {
   font-size: 8rem;
   font-weight: normal;
   white-space: nowrap;
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (max-width: 1300px){
   .hero-headline{
