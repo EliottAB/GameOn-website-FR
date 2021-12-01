@@ -54,7 +54,7 @@ function validate(){
   //if one of the input is false the form don't send
   if(error == false){
     finalMessage.style.display = "flex";
-    document.querySelector("main").style.display = "none"
+    document.getElementById("content").style.display = "none"
     document.querySelector("form").reset()
   }
 }
